@@ -7,3 +7,6 @@
 
 console.log("UI Pattern Project Connected")
 
+
+let tabs = document.querySelectorAll(".tab")
+
