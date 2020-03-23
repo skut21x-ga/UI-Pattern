@@ -9,17 +9,17 @@ body {
 }
 
 .websiteBackgroundTop {
-  background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png")
+  background: url("https://image.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg")
     center;
   background-size: cover;
   background-repeat: repeat;
   padding-bottom: 100px;
+  box-shadow: inset 0px -20px 30px;
 }
 
 .titleBar {
   font-family: "harry_pregular";
   font-size: 55px;
-
   text-shadow: 0.5px 0.5px 2px hsl(54, 100%, 50%);
   display: flex;
   border-top: 1px solid black;
@@ -47,7 +47,6 @@ body {
   justify-content: center;
   text-align: center;
   width: 100vw;
-  background-color: red;
   height: 40px;
 }
 
@@ -62,6 +61,8 @@ body {
   border-right: 0.1px solid black;
   border-bottom: 0.1px solid black;
   border-left: 0.1px solid black;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .characterContainer {
@@ -89,7 +90,7 @@ body {
 }
 
 .websiteBackgroundBottom {
-  background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png")
+  background: url("https://image.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg")
     center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,13 +99,14 @@ body {
   bottom: 0%;
   width: 100%;
   border-top: 1px solid black;
+  box-shadow: inset 0px 20px 30px;
 }
 
 #name {
   font-size: 60px;
   font-family: "harry_pregular";
   margin-top: -30px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .characterBio {
@@ -123,54 +125,55 @@ body {
     height: 300px;
   }
   .websiteBackgroundTop {
-    padding-bottom: 30px;}
-
+    padding-bottom: 150px;
+    box-shadow: inset 0px -10px 10px;
+  }
   .websiteBackgroundBottom {
-        height: 30px;}
+    height: 150px;
+    box-shadow: inset 0px 10px 10px;
+  }
 
   .titleBar {
-            font-family: "harry_pregular";
-            font-size: 35px;}
-
+    font-family: "harry_pregular";
+    font-size: 35px;
+  }
   #name {
-        font-size: 40px;
-        margin-top: -30px;
-              }
+    font-size: 40px;
+    margin-top: -30px;
+  }
   .characterBio {
     margin-left: 20px;
     margin-top: -50px;
     font-size: 15px;
     width: 300px;
     text-align: center;
-              }
+  }
 }
-
 
 /* Small devices */
 @media (max-width: 600px) {
-    #photo {
-        margin-top: -50px;
-        margin-left: 20px;
-        margin-right: 20px;
-        height:150px;
+  #photo {
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+  }
+  .websiteBackgroundTop {
+    padding-bottom: 100px;
+  }
 
-      }
-      .websiteBackgroundTop {
-        padding-bottom: 20px;}
-    
-      .websiteBackgroundBottom {
-            height: 20px;}
-    
-      .titleBar {
-    font-family: 'Times New Roman', Times, serif;
+  .websiteBackgroundBottom {
+    height: 125px;
+  }
+
+  .titleBar {
+    font-family: "Times New Roman", Times, serif;
     font-size: 25px;
-        }
+  }
 
   #name {
     font-size: 20px;
     margin-top: 0px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
+  }
 }
-
-  #photo {
-  } 

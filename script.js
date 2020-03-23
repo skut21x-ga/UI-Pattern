@@ -32,8 +32,64 @@ function connectAPI() {
 const baseUrl =
   "https://www.potterapi.com/v1/characters?key=$2a$10$2PGvzZtaIOQopUvoB2BIeOYR/PZjTNS0QL7GmjXSICBXNPN5qBxyS";
 
+connectAPI();
+
+function harry() {
+  x = 109;
+  potterPhoto.src = "harry.png";
+  characterNameBox.textContent = responseObject[x].name;
+  nickname.textContent = responseObject[x].alias;
+  wand.textContent = responseObject[x].wand;
+  patronus.textContent = responseObject[x].patronus;
+  blood.textContent = responseObject[x].bloodStatus;
+  characterBioDiv.style.display = "block";
+  potterPhoto.style.display = "block";
+  tab1.style.backgroundColor = "white";
+  tab2.style.backgroundColor = "lightslategray";
+  tab3.style.backgroundColor = "lightslategray";
+  tab4.style.backgroundColor = "lightslategray";
+}
+
+function hermione() {
+  x = 62;
+  potterPhoto.src = "harry.png";
+  characterNameBox.textContent = responseObject[x].name;
+  nickname.textContent = "Hermy";
+  wand.textContent = responseObject[x].wand;
+  patronus.textContent = responseObject[x].patronus;
+  blood.textContent = responseObject[x].bloodStatus;
+  characterBioDiv.style.display = "block";
+  potterPhoto.style.display = "block";
+  potterPhoto.src = "hermione.png";
+  characterBioDiv.style.display = "block";
+  potterPhoto.style.display = "block";
+  tab2.style.backgroundColor = "white";
+  tab1.style.backgroundColor = "lightslategray";
+  tab3.style.backgroundColor = "lightslategray";
+  tab4.style.backgroundColor = "lightslategray";
+}
+
+function ron() {
+  x = 156;
+  potterPhoto.src = "ron.png";
+  characterNameBox.textContent = responseObject[x].name;
+  nickname.textContent = responseObject[x].alias;
+  wand.textContent = responseObject[x].wand;
+  patronus.textContent = responseObject[x].patronus;
+  blood.textContent = responseObject[x].bloodStatus;
+  characterBioDiv.style.display = "block";
+  potterPhoto.style.display = "block";
+  tab1.style.backgroundColor = "lightslategray";
+  tab2.style.backgroundColor = "lightslategray";
+  tab3.style.backgroundColor = "white";
+  tab4.style.backgroundColor = "lightslategray";
+}
+
 function randomizer() {
-  potterPhoto.src = "poster.png";
+  tab1.style.backgroundColor = "lightslategray";
+  tab2.style.backgroundColor = "lightslategray";
+  tab3.style.backgroundColor = "lightslategray";
+  tab4.style.backgroundColor = "white";
   x = Math.floor(Math.random(100) * responseObject.length);
   if (responseObject[x].wand == null && responseObject[x].patronus == null) {
     randomizer();
@@ -59,57 +115,16 @@ function randomizer() {
     } else {
       patronus.textContent = responseObject[x].patronus;
     }
-    if (responseObject[x].blood == null) {
+    if (responseObject[x].bloodStatus == null) {
       blood.textContent = "Unknown";
     } else {
       blood.textContent = responseObject[x].bloodStatus;
     }
-    characterBioDiv.style.display = "block";
-    potterPhoto.style.display = "block";
-    characterBioDiv.style.display = "block";
   }
-}
-
-function harry() {
-  x = 109;
-  potterPhoto.src = "harry.png";
-  characterNameBox.textContent = responseObject[x].name;
-  nickname.textContent = responseObject[x].alias;
-  wand.textContent = responseObject[x].wand;
-  patronus.textContent = responseObject[x].patronus;
-  blood.textContent = responseObject[x].bloodStatus;
+  potterPhoto.src = "poster.png";
   characterBioDiv.style.display = "block";
   potterPhoto.style.display = "block";
 }
-
-function hermione() {
-  x = 62;
-  potterPhoto.src = "harry.png";
-  characterNameBox.textContent = responseObject[x].name;
-  nickname.textContent = "Hermy";
-  wand.textContent = responseObject[x].wand;
-  patronus.textContent = responseObject[x].patronus;
-  blood.textContent = responseObject[x].bloodStatus;
-  characterBioDiv.style.display = "block";
-  potterPhoto.style.display = "block";
-  potterPhoto.src = "hermione.png";
-  characterBioDiv.style.display = "block";
-  potterPhoto.style.display = "block";
-}
-
-function ron() {
-  x = 156;
-  potterPhoto.src = "ron.png";
-  characterNameBox.textContent = responseObject[x].name;
-  nickname.textContent = responseObject[x].alias;
-  wand.textContent = responseObject[x].wand;
-  patronus.textContent = responseObject[x].patronus;
-  blood.textContent = responseObject[x].bloodStatus;
-  characterBioDiv.style.display = "block";
-  potterPhoto.style.display = "block";
-}
-
-connectAPI();
 
 tab1.addEventListener("click", harry);
 tab2.addEventListener("click", hermione);
