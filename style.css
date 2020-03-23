@@ -1,142 +1,176 @@
 * {
-    box-sizing:border-box;
-    /* outline: 1px solid red; */
-    /* ^ Code to see DIV Borders ^ */
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  /* ^ Code to see DIV Borders ^ */
 }
-
 
 body {
-    margin:0;
-    }
+  margin: 0;
+}
 
 .websiteBackgroundTop {
-    background-color:#3693D6;
-    background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png") center;
-    background-size: cover;
-    background-repeat: repeat;
-    padding-bottom: 100px;
-    }
-
+  background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png")
+    center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-bottom: 100px;
+}
 
 .titleBar {
-    font-family: 'harry_pregular';
-    font-size: 45px;
-    padding-left: 20px;
-    text-shadow: .5px .5px 2px hsl(54, 100%, 50%);
-    display:flex;
-    border-top: 1px solid black;
-    justify-content: center;
-    padding-bottom: 10px;
-    padding-top:13px;
-    
+  font-family: "harry_pregular";
+  font-size: 55px;
+
+  text-shadow: 0.5px 0.5px 2px hsl(54, 100%, 50%);
+  display: flex;
+  border-top: 1px solid black;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 13px;
 }
 
-.containerBig{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    text-align: center;
-
+.containerBig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.containerBackground{
-    width:95%;
-    display:flex;
-    justify-content: center;
-    border: 1px solid black;
+.containerBackground {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
 }
 
 .tabContainer {
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    width:100vw;
-    background-color: red;
-    height:40px;    
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  background-color: red;
+  height: 40px;
 }
 
 .tab {
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: lightslategray;
-    width: 100%;
-    border-top:.1px solid black;
-    border-right:.1px solid black;
-    border-bottom:.1px solid black;
-    border-left:.1px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: lightslategray;
+  width: 100%;
+  border-top: 0.1px solid black;
+  border-right: 0.1px solid black;
+  border-bottom: 0.1px solid black;
+  border-left: 0.1px solid black;
 }
 
-
-.characterContainer{
-    width:100%;
-    display:flex;
-    justify-content: center;
-    
+.characterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.characterViewBox{
-    width:95%;
-    height: 500px;
-    display:flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    background-color:lightgray;
+.characterViewBox {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: lightgray;
 }
 
+#photo {
+  margin-top: -20px;
+  height: 325px;
+}
 
 .websiteBackgroundBottom {
-    background-color:#3693D6;
-    background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png") center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px; 
-    position: fixed; 
-    bottom:0%;
-    width:100%;  
-    border-top: 1px solid black;
-    }
+  background: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png")
+    center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  border-top: 1px solid black;
+}
 
 #name {
-    font-size: 30px;
-    margin-top: -60px;
+  font-size: 60px;
+  font-family: "harry_pregular";
+  margin-top: -30px;
+  margin-bottom:20px;
 }
-    
+
 .characterBio {
-    margin-left: 100px;
+  margin-left: 50px;
+  margin-right: 20px;
+  font-size: 20px;
+  width: 400px;
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* Smaller Than Laptop  */
-@media (max-width: 1000px){
-}
-
-
-
 
 /* Tablets */
-@media (max-width: 800px)
-{}
+@media (max-width: 800px) {
+  #photo {
+    margin-top: -30px;
+    display: "float";
+    height: 300px;
+  }
+  .websiteBackgroundTop {
+    padding-bottom: 30px;}
 
+  .websiteBackgroundBottom {
+        height: 30px;}
 
+  .titleBar {
+            font-family: "harry_pregular";
+            font-size: 35px;}
 
-/* Super Small devices */
-@media (max-width: 500px){}
+  #name {
+        font-size: 40px;
+        margin-top: -30px;
+              }
+  .characterBio {
+    margin-left: 20px;
+    margin-top: -50px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+              }
+}
+
 
 /* Small devices */
-@media (max-width: 600px){}
+@media (max-width: 600px) {
+    #photo {
+        margin-top: -50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height:150px;
+
+      }
+      .websiteBackgroundTop {
+        padding-bottom: 20px;}
+    
+      .websiteBackgroundBottom {
+            height: 20px;}
+    
+      .titleBar {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+        }
+
+  #name {
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  #photo {
+  } 
