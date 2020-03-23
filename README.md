@@ -6,20 +6,20 @@ Using the Harry Potter API @ https://www.potterapi.com
 
 
 # The available parameters I had to choose from were:
-** house
-** patronus
-** species	
-** bloodStatus
-** role	
-** school	
-** deathEater
-** dumbledoresArmy
-** orderOfThePhoenix
-** ministryOfMagic
-** alias
-** wand	
-** boggart
-** animagus
+* house
+* patronus
+* species	
+* bloodStatus
+* role	
+* school	
+* deathEater
+* dumbledoresArmy
+* orderOfThePhoenix
+* ministryOfMagic
+* alias
+* wand	
+* boggart
+* animagus
 
-* I deicded to go with alias, wand type, blood status, and patronus.
+** I deicded to go with alias, wand type, blood status, and patronus because many of the other parameters were null for this api.
 
