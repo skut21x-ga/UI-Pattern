@@ -6,7 +6,7 @@ Using the Harry Potter API @ https://www.potterapi.com
 
 
 # The available parameters I had to choose from were:
-** house	string	Valid strings: 'Gryffindor', 'Ravenclaw', 'Slytherin', 'Hufflepuff'
+** house
 ** patronus
 ** species	
 ** bloodStatus
